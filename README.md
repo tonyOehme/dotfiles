@@ -9,6 +9,8 @@ defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.
 brew install git   
 brew install maccy  
 brew install --cask iterm2  
+brew install --cask alfred  
+brew install --cask rectangle
 brew install --cask visual-studio-code  
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k  
