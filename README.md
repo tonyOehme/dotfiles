@@ -26,6 +26,7 @@ defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write com.apple.dock mineffect -string scale  
 sudo nvram "enable-ambient-light-sensor=0"  
 defaults write com.apple.BezelServices dAuto -boolean false  
+defaults write -g AppleShowScrollBars -string "Always"   
 defaults write com.apple.finder autohide-delay -float 0;killall Finder  
 defaults write com.apple.dock orientation left;defaults write com.apple.dock autohide -bool true;defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock  
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false  
