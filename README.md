@@ -15,6 +15,8 @@ xcode-select --install
 bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)  
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/[username]/.zprofile  
 eval "$(/opt/homebrew/bin/brew shellenv)"  
+defaults write com.apple.universalaccess mouseDriverCursorSize 4.0  
+defaults write NSGlobalDomain _HIHideMenuBar -bool true  
 defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide autohide-time-modifier -int 0;killall Dock  
 brew install git   
 brew install maccy  
