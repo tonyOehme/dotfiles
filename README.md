@@ -22,13 +22,13 @@ defaults write com.apple.BezelServices dAuto -boolean false
 defaults write NSGlobalDomain _HIHideMenuBar -bool true  
 defaults write com.apple.finder autohide-delay -float 0;killall Finder  
 defaults write com.apple.dock orientation left;defaults write com.apple.dock autohide -bool true;defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock  
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false    
-defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false    
-defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false  
-defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false  
-defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false  
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false  
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false;
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false;
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false;
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false;
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false;
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false;
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false;
 defaults write .GlobalPreferences com.apple.mouse.scaling -1  
 brew install --cask shottr   
 brew install --cask google-chrome  
