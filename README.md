@@ -4,9 +4,9 @@ config files for vscode and zsh
 ## windows 
 ### no terminal apps :(
 ### windows setup commands  
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-choco install flow-launcher
-choco install vscode
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))  
+choco install flow-launcher  
+choco install vscode  
 ## mac
 ### mac no terminal apps :(
 snap: https://apps.apple.com/us/app/snap/id418073146?mt=12
