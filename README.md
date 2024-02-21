@@ -12,11 +12,13 @@ snap: https://apps.apple.com/us/app/snap/id418073146?mt=12
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"    
 xcode-select --install  
-bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)  
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/[username]/.zprofile  
 eval "$(/opt/homebrew/bin/brew shellenv)"  
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0  
+defaults write -g AppleReduceDesktopTinting -bool yes  
 defaults write com.apple.dock mineffect -string scale  
+sudo nvram "enable-ambient-light-sensor=0"  
+defaults write com.apple.BezelServices dAuto -boolean false  
 defaults write NSGlobalDomain _HIHideMenuBar -bool true  
 defaults write com.apple.finder autohide-delay -float 0&&killall Finder  
 defaults delete com.apple.dock autohide && defaults write com.apple.dock show-recents -bool false &&defaults delete com.apple.dock autohide-delay && defaults delete com.apple.dock autohide-time-modifier && killall Dock   
