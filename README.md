@@ -20,6 +20,7 @@ brew install git
 brew install maccy  
 brew install --cask iterm2  
 brew install --cask alfred  
+brew install --cask scroll-reverser  
 brew install --cask spotify
 brew install --cask rectangle  
 brew install --cask visual-studio-code  
