@@ -1,5 +1,9 @@
 # dotfiles
 config files for vscode and zsh
+
+## windows 
+### no terminal apps :(
+### windows setup commands
 ##mac
 ### mac no terminal apps :(
 snap: https://apps.apple.com/us/app/snap/id418073146?mt=12
