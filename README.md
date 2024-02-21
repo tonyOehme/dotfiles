@@ -39,7 +39,7 @@ defaults write .GlobalPreferences com.apple.mouse.scaling -1
 brew install --cask shottr   
 brew install --cask google-chrome  
 brew install git    
-brew install koekeishiya/formulae/yabai  
+curl -L https://raw.githubusercontent.com/koekeishiya/yabai/master/scripts/install.sh | sh /dev/stdin
 brew install --cask maccy  
 brew install --cask iterm2  
 brew install --cask alfred  
