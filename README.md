@@ -17,8 +17,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/mai
 eval "$(/opt/homebrew/bin/brew shellenv)"  
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0  
 defaults write NSGlobalDomain _HIHideMenuBar -bool true  
-defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide autohide-time-modifier -int 0;killall Dock  
-brew install git   
+defaults delete com.apple.dock autohide && defaults delete com.apple.dock autohide-delay && defaults delete com.apple.dock autohide-time-modifier && killall Dockbrew install git    
 brew install maccy  
 brew install --cask iterm2  
 brew install --cask alfred  
