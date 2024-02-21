@@ -38,7 +38,7 @@ brew install --cask iterm2
 brew install --cask alfred  
 brew install --cask scroll-reverser  
 brew install --cask cheatsheet  
-brew install --cask spotify
+brew install --cask spotify  
 brew install --cask rectangle  
 brew install --cask visual-studio-code  
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
