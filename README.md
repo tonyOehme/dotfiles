@@ -16,8 +16,22 @@ bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/mai
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/[username]/.zprofile  
 eval "$(/opt/homebrew/bin/brew shellenv)"  
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0  
+defaults write com.apple.dock mineffect -string scale  
 defaults write NSGlobalDomain _HIHideMenuBar -bool true  
-defaults delete com.apple.dock autohide && defaults delete com.apple.dock autohide-delay && defaults delete com.apple.dock autohide-time-modifier && killall Dockbrew install git    
+defaults write com.apple.finder autohide-delay -float 0&&killall Finder  
+defaults delete com.apple.dock autohide && defaults write com.apple.dock show-recents -bool false &&defaults delete com.apple.dock autohide-delay && defaults delete com.apple.dock autohide-time-modifier && killall Dock   
+defaults write com.apple.dock orientation left  
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false    
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false    
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false  
+defaults write .GlobalPreferences com.apple.mouse.scaling -1  
+brew install --cask shottr   
+brew install --cask google-chrome  
+brew install git    
 brew install maccy  
 brew install --cask iterm2  
 brew install --cask alfred  
