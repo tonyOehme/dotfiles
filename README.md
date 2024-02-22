@@ -42,7 +42,7 @@ brew install --cask google-chrome
 brew install git    
 brew install --cask maccy   
 brew install --cask iterm2  
-brew install --cask alfred  
+brew install --cask raycast
 brew install --cask scroll-reverser  
 brew install --cask appcleaner  
 brew install --cask spotify  
