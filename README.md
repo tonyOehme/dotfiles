@@ -44,6 +44,7 @@ brew install --cask maccy
 brew install --cask iterm2  
 brew install --cask raycast
 brew install --cask scroll-reverser  
+brew install fzf
 brew install --cask appcleaner  
 brew install --cask spotify  
 brew install --cask microsoft-outlook  
