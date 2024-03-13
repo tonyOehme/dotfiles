@@ -1,6 +1,6 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"    
 xcode-select --install  
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile  
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile  
 eval "$(/opt/homebrew/bin/brew shellenv)"  
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0  
 defaults write -g AppleReduceDesktopTinting -bool yes  
