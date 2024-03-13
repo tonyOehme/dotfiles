@@ -19,8 +19,6 @@ snap: https://apps.apple.com/us/app/snap/id418073146?mt=12
 
 one line setup: 
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"    
-
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tonyOehme/dotfiles/main/install.sh)"    
 ```
