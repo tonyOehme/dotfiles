@@ -40,3 +40,4 @@ curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/.zshrc > ~/.zshrc
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_settings_mac.json > ~/Library/Application\ Support/Code/User/settings.json
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_keybindings_mac.json > ~/Library/Application\ Support/Code/User/keybindings.json
 source ~/.zshrc
+p10k configure
