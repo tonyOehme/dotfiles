@@ -37,4 +37,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions  
 bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/.zshrc > ~/.zshrc
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscoce_settings_mac.json > ~/Library/Application Support/Code/User/settings.json
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscoce_settings_mac.json > ~/Library/Application Support/Code/User/keybindings.json
 source ~/.zshrc
