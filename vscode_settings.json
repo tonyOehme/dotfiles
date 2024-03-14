@@ -1,4 +1,5 @@
 {
+  "editor.autoClosingBrackets": "never",
   "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -108,5 +109,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "dart.flutterSdkPath": "/Users/tonyandyoehme/development/flutter"
 }
