@@ -3,6 +3,7 @@
   "editor.cursorBlinking": "solid",
   "explorer.autoReveal": true,
   "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
   "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.trimFinalNewlines": true,
@@ -114,5 +115,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.activityBar.location": "hidden",
-  "dart.flutterSdkPath": "/Users/tonyandyoehme/development/flutter"
+  "dart.flutterSdkPath": "/Users/tonyandyoehme/development/flutter",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false
 }
