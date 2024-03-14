@@ -1,7 +1,11 @@
 {
+  "workbench.editor.highlightModifiedTabs": false,
+  "editor.cursorBlinking": "solid",
+  "explorer.autoReveal": true,
   "editor.autoClosingBrackets": "never",
   "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.trimFinalNewlines": true,
   "editor.formatOnSave": true,
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
