@@ -29,10 +29,16 @@
   "workbench.sideBar.location": "right",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [{ "before": ["<C-c>"], "after": ["<Esc>"] }],
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
     { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
     { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+    { "before": ["J"], "after": ["m", "z", "J", "`", "z"] },
+    { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
+    { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
+    { "before": ["q"], "after": ["<nop>"] },
+    { "before": ["Q"], "after": ["<nop>"] },
     // switch b/w buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
@@ -88,7 +94,8 @@
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+    { "before": ["leader", "y"], "after": ["\"", "+", "y"] }
   ],
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
