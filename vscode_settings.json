@@ -40,15 +40,7 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
     { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
-    { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
     { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
-    { "before": ["+"], "after": ["<C-a>"] },
-    { "before": ["-"], "after": ["<C-x>"] },
-    { "before": ["J"], "after": ["m", "z", "J", "`", "z"] },
-    { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
-    { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
-    { "before": ["q"], "after": ["<nop>"] },
-    { "before": ["Q"], "after": ["<nop>"] },
     // switch b/w buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
@@ -74,6 +66,14 @@
       "commands": ["workbench.action.focusRightGroup"]
     },
     // NICE TO HAVE
+    { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
+    { "before": ["+"], "after": ["<C-a>"] },
+    { "before": ["-"], "after": ["<C-x>"] },
+    { "before": ["J"], "after": ["m", "z", "J", "`", "z"] },
+    { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
+    { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
+    { "before": ["q"], "after": ["<nop>"] },
+    { "before": ["Q"], "after": ["<nop>"] },
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "q"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
@@ -93,6 +93,30 @@
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    { "before": ["leader", "y"], "after": ["\"", "+", "y"] },
+    { "before": ["leader", "Y"], "after": ["\"", "+", "Y"] },
+    {
+      "before": ["leader", "s"],
+      "after": [
+        ":",
+        "%",
+        "s",
+        "/",
+        "<",
+        "<C-r>",
+        "<C-w>",
+        ">",
+        "/",
+        "<C-r>",
+        "<C-w>",
+        "/",
+        "g",
+        "I",
+        "<Left>",
+        "<Left>",
+        "<Left>"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
