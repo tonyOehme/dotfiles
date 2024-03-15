@@ -13,7 +13,7 @@
   "oneDarkPro.vivid": true,
   "oneDarkPro.italic": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "zsh",
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.suggest.insertMode": "replace",
@@ -35,12 +35,15 @@
   "editor.lineNumbers": "relative",
   "workbench.sideBar.location": "right",
   "vim.leader": "<Space>",
-  "vim.hlsearch": true,
+  "vim.hlsearch": false,
   "vim.insertModeKeyBindings": [{ "before": ["<C-c>"], "after": ["<Esc>"] }],
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
     { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+    { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
     { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+    { "before": ["+"], "after": ["<C-a>"] },
+    { "before": ["-"], "after": ["<C-x>"] },
     { "before": ["J"], "after": ["m", "z", "J", "`", "z"] },
     { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
     { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
@@ -87,7 +90,6 @@
       "commands": ["editor.action.quickFix"]
     },
     { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -115,8 +117,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.activityBar.location": "hidden",
-  "dart.flutterSdkPath": "/Users/tonyandyoehme/development/flutter",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "none"
+  "workbench.editor.enablePreview": false
 }
