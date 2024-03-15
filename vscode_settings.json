@@ -97,16 +97,14 @@
     { "before": ["leader", "y"], "after": ["\"", "+", "y"] },
     { "before": ["leader", "Y"], "after": ["\"", "+", "Y"] },
     {
-      "before": ["leader", "s"],
+      "before": ["s"],
       "after": [
         ":",
         "%",
         "s",
         "/",
-        "<",
         "<C-r>",
         "<C-w>",
-        ">",
         "/",
         "<C-r>",
         "<C-w>",
