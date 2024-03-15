@@ -1,124 +1,43 @@
-{
-  "workbench.editor.highlightModifiedTabs": false,
-  "editor.cursorBlinking": "solid",
-  "explorer.autoReveal": true,
-  "editor.autoClosingBrackets": "never",
-  "editor.autoClosingQuotes": "never",
-  "editor.cursorSurroundingLines": 8,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "files.trimFinalNewlines": true,
-  "editor.formatOnSave": true,
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.iconTheme": "material-icon-theme",
-  "oneDarkPro.vivid": true,
-  "oneDarkPro.italic": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.windows": "zsh",
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.suggest.insertMode": "replace",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "editor.linkedEditing": true,
-  "window.zoomLevel": 0.5,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "launch": {},
-  "[json]": {},
-  "workbench.statusBar.visible": true,
-  "editor.minimap.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.sortImports": "explicit"
-  },
-  "breadcrumbs.enabled": true,
-  "update.showReleaseNotes": false,
-  "zenMode.hideLineNumbers": false,
-  "editor.lineNumbers": "relative",
-  "workbench.sideBar.location": "right",
-  "vim.leader": "<Space>",
-  "vim.hlsearch": false,
-  "vim.insertModeKeyBindings": [{ "before": ["<C-c>"], "after": ["<Esc>"] }],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    // NAVIGATION
-    { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
-    { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
-    { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
-    { "before": ["+"], "after": ["<C-a>"] },
-    { "before": ["-"], "after": ["<C-x>"] },
-    { "before": ["J"], "after": ["m", "z", "J", "`", "z"] },
-    { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
-    { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
-    { "before": ["q"], "after": ["<nop>"] },
-    { "before": ["Q"], "after": ["<nop>"] },
-    // switch b/w buffers
-    { "before": ["<S-h>"], "commands": [":bprevious"] },
-    { "before": ["<S-l>"], "commands": [":bnext"] },
-    // splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
-
-    // panes
-    {
-      "before": ["leader", "h"],
-      "commands": ["workbench.action.focusLeftGroup"]
-    },
-    {
-      "before": ["leader", "j"],
-      "commands": ["workbench.action.focusBelowGroup"]
-    },
-    {
-      "before": ["leader", "k"],
-      "commands": ["workbench.action.focusAboveGroup"]
-    },
-    {
-      "before": ["leader", "l"],
-      "commands": ["workbench.action.focusRightGroup"]
-    },
-    // NICE TO HAVE
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
-    // Move selected lines while staying in visual mode
-    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-    // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
-    { "before": ["leader", "y"], "after": ["\"", "+", "y"] }
-  ],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "go.toolsManagement.autoUpdate": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.activityBar.location": "hidden",
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.editor.enablePreview": false
-}
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"    
+xcode-select --install  
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile  
+eval "$(/opt/homebrew/bin/brew shellenv)"  
+defaults write com.apple.universalaccess mouseDriverCursorSize 4.0  
+defaults write -g AppleReduceDesktopTinting -bool yes  
+defaults write com.apple.dock mineffect -string scale  
+sudo nvram "enable-ambient-light-sensor=0"  
+defaults write com.apple.BezelServices dAuto -boolean false  
+defaults write -g AppleShowScrollBars -string "Always"   
+defaults write com.apple.finder autohide-delay -float 0;killall Finder  
+defaults write com.apple.dock orientation bottom;defaults write com.apple.dock autohide -bool true;defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock  
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false  
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false  
+defaults write .GlobalPreferences com.apple.mouse.scaling -1  
+brew install --cask shottr   
+brew install --cask google-chrome  
+brew install git    
+brew install --cask maccy   
+brew install --cask iterm2  
+brew install --cask alfred
+brew install --cask scroll-reverser  
+brew install fzf
+brew install --cask appcleaner  
+brew install --cask spotify  
+brew install --cask microsoft-outlook  
+brew install --cask rectangle  
+brew install --cask visual-studio-code  
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k  
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting   
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions  
+bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/.zshrc > ~/.zshrc
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_settings.json > ~/Library/Application\ Support/Code/User/settings.json
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_keybindings_mac.json > ~/Library/Application\ Support/Code/User/keybindings.json
+source ~/.zshrc
+p10k configure
