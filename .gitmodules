@@ -1,3 +1,6 @@
 [submodule "nvim"]
-	path = nvim
+	path = editor-configs/nvim-config
 	url = https://github.com/tonyOehme/nvim
+[submodule "vscode-config"]
+	path = editor-configs/vscode-config
+	url = https://github.com/tonyOehme/vscode-config
