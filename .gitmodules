@@ -1,0 +1,3 @@
+[submodule "code-editors/nvim"]
+	path = code-editors/nvim
+	url = https://github.com/tonyOehme/nvim
