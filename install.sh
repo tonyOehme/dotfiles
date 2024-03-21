@@ -3,6 +3,7 @@ xcode-select --install
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
+defaults write -g NSWindowShouldDragOnGesture YES
 defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write com.apple.dock mineffect -string scale
 defaults write -g InitialKeyRepeat -int 10
