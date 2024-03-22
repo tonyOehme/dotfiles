@@ -42,4 +42,4 @@ bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/mai
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/.zshrc > ~/.zshrc
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_settings.json > ~/Library/Application\ Support/Code/User/settings.json
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_keybindings_mac.json > ~/Library/Application\ Support/Code/User/keybindings.json
-source ~/.zshrc
+eval "$(fzf --zsh)"
