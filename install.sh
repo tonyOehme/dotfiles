@@ -28,19 +28,15 @@ brew install --cask maccy
 brew install --cask iterm2
 brew install --cask alfred
 brew install --cask scroll-reverser
-brew install fzf
 brew install nvim
 brew install --cask appcleaner
 brew install --cask spotify
 brew install --cask microsoft-outlook
 brew install --cask rectangle
-brew install --cask visual-studio-code
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/.zshrc > ~/.zshrc
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_settings.json > ~/Library/Application\ Support/Code/User/settings.json
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/vscode_keybindings_mac.json > ~/Library/Application\ Support/Code/User/keybindings.json
-eval "$(fzf --zsh)"
