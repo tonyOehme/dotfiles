@@ -29,6 +29,7 @@ brew install --cask iterm2
 brew install --cask alfred
 brew install --cask scroll-reverser
 brew install fzf
+brew install nvim
 brew install --cask appcleaner
 brew install --cask spotify
 brew install --cask microsoft-outlook
