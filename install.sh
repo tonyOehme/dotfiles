@@ -22,6 +22,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 brew install nvim
+brew install tmux 
 brew install git
 brew install tldr
 brew install ripgrep
