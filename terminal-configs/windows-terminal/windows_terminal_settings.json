@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -22,10 +23,6 @@
             "keys": "ctrl+t"
         },
         {
-            "command": "find",
-            "keys": "ctrl+f"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -33,6 +30,10 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+f"
         },
         {
             "command": 
@@ -45,18 +46,23 @@
     "alwaysOnTop": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
-    "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "defaultProfile": "{00000000-0000-0000-ba54-000000000002}",
     "disableAnimations": true,
     "experimental.rendering.software": true,
     "largePasteWarning": false,
     "multiLinePasteWarning": false,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
-            "acrylicOpacity": 0,
             "backgroundImage": "C:\\Users\\tonyo\\Pictures\\wallpapers\\Capture.PNG",
-            "backgroundImageOpacity": 0.6,
+            "backgroundImageOpacity": 1,
             "colorScheme": "Dracula",
             "cursorColor": "#11FFEE",
             "cursorShape": "filledBox",
@@ -65,6 +71,7 @@
                 "face": "MesloLGS NF",
                 "weight": "normal"
             },
+            "opacity": 0,
             "scrollbarState": "visible",
             "snapOnInput": true,
             "useAcrylic": false
@@ -80,7 +87,6 @@
                 "tabTitle": "Git Bash"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt",
@@ -99,7 +105,7 @@
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "font": 
                 {
-                    "size": 12
+                    "size": 12.0
                 },
                 "guid": "{5fed7083-b344-473f-bc5c-613d0815f3bd}",
                 "historySize": 9001,
@@ -110,10 +116,9 @@
                 "useAcrylic": false
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
+                "name": "Windows PowerShell"
             }
         ]
     },
@@ -350,6 +355,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -376,5 +404,6 @@
     "tabSwitcherMode": "inOrder",
     "tabWidthMode": "equal",
     "theme": "dark",
+    "themes": [],
     "useAcrylicInTabRow": true
 }
