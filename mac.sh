@@ -38,8 +38,8 @@ brew install --cask spotify
 brew install --cask microsoft-outlook
 brew install --cask rectangle
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth 1 https://github.com/junegunn/fzf.git  
-~/.fzf ~/.fzf/install  
+git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf   
+~/.fzf/install    
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
