@@ -373,7 +373,7 @@
     "Green Component" : 0.25882357358932495
   },
   "Only The Default BG Color Uses Transparency" : false,
-  "Option Key Sends" : 0,
+  "Option Key Sends" : 2,
   "Blink Allowed" : true,
   "Ansi 15 Color" : {
     "Red Component" : 0.97254902124404907,
