@@ -28,6 +28,9 @@ brew install git
 brew install tldr
 brew install ripgrep
 brew install --cask shottr
+brew install --cask firefox
+brew install --cask keka
+brew install --cask docker
 brew install --cask google-chrome
 brew install --cask maccy
 brew install --cask iterm2
@@ -36,10 +39,12 @@ brew install --cask scroll-reverser
 brew install --cask appcleaner
 brew install --cask spotify
 brew install --cask microsoft-outlook
+brew install --cask visual-studio-code
 brew install --cask rectangle
+brew install --cask jetbrains-toolbox
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf   
-~/.fzf/install    
+git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
+~/.fzf/install
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
