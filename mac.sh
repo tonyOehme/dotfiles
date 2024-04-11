@@ -1,5 +1,5 @@
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 sudo nvram "enable-ambient-light-sensor=0"
@@ -39,6 +39,7 @@ brew install --cask scroll-reverser
 brew install --cask appcleaner
 brew install --cask spotify
 brew install --cask microsoft-outlook
+brew install --cask jetbrains-toolbox
 brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask jetbrains-toolbox
@@ -48,7 +49,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)
