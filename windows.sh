@@ -1,6 +1,6 @@
-# need to install browser(s), peazip, code editors, discord with vencord, powertoys, windows terminal
+# need to install browser(s), peazip, code editors, discord with vencord, powertoys, windows terminal and everything else you might need
 irm christitus.com/win | iex
-wsl --install -d [linux distro]
+wsl --install -d [ linux distro]
 winget install --id=Flow-Launcher.Flow-Launcher  -e
 winget install --id=Microsoft.Office  -e
 winget install --id=Spotify.Spotify  -e

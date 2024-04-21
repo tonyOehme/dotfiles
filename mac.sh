@@ -38,8 +38,8 @@ brew install --cask alfred
 brew install --cask scroll-reverser
 brew install --cask appcleaner
 brew install --cask spotify
-brew install --cask microsoft-outlook
 brew install --cask jetbrains-toolbox
+brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask jetbrains-toolbox
