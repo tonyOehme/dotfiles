@@ -31,6 +31,7 @@ brew install --cask shottr
 brew install --cask firefox
 brew install --cask keka
 brew install --cask docker
+brew install --cask topnotch
 brew install --cask google-chrome
 brew install --cask maccy
 brew install --cask iterm2
