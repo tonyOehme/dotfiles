@@ -3,12 +3,12 @@ xcode-select --install
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 sudo nvram "enable-ambient-light-sensor=0"
-defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
 defaults write -g NSWindowShouldDragOnGesture YES
 defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
 defaults write -g AppleShowScrollBars -string "Always"
+defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.BezelServices dAuto -boolean false
 defaults write com.apple.finder autohide-delay -float 0;killall Finder
