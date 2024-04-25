@@ -1,0 +1,14 @@
+let mapleader=" "
+""" Common settings -------------------------
+set showmode
+set scrolloff=8
+set incsearch
+set hlsearch
+set number
+set relativenumber
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+""" Mappings  ------------------------
