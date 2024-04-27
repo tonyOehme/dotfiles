@@ -3,12 +3,12 @@ xcode-select --install
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 sudo nvram "enable-ambient-light-sensor=0"
-defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
 defaults write -g NSWindowShouldDragOnGesture YES
 defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
 defaults write -g AppleShowScrollBars -string "Always"
+defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.BezelServices dAuto -boolean false
 defaults write com.apple.finder autohide-delay -float 0;killall Finder
@@ -47,6 +47,10 @@ brew install --cask jetbrains-toolbox
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 ~/.fzf/install
+git config --global init.defaultBranch main
+git config --global pull.rebase false
+echo .DS_Store >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
