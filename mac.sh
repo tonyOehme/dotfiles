@@ -8,6 +8,7 @@ defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
 defaults write -g AppleShowScrollBars -string "Always"
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.BezelServices dAuto -boolean false
@@ -20,7 +21,6 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-defaults write .GlobalPreferences com.apple.mouse.scaling -1
 brew install nvim
 brew install fzf
 brew install tmux
@@ -48,6 +48,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 ~/.fzf/install
 git config --global init.defaultBranch main
+git config --global core.editor "nvim"
 git config --global pull.rebase false
 echo .DS_Store >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
