@@ -5,4 +5,4 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/Library/Application\ Support/Jetbrains/Toolbox/scripts:$PATH
 export EDITOR="nvim"
-
+export GIT_EDITOR="nvim"
