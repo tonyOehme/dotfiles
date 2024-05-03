@@ -1,7 +1,9 @@
+# brew setup
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# mac settings
 sudo nvram "enable-ambient-light-sensor=0"
 defaults write -g NSWindowShouldDragOnGesture YES
 defaults write -g AppleReduceDesktopTinting -bool yes
@@ -10,6 +12,7 @@ defaults write -g KeyRepeat -int 0
 defaults write -g AppleShowScrollBars -string "Always"
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
+defaults write com.apple.universalaccess reduceTransparency 1
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.BezelServices dAuto -boolean false
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
@@ -24,13 +27,16 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+# terminal programs
 brew install nvim
 brew install fzf
 brew install tmux
 brew install git
 brew install tldr
-brew install font-meslo-lg-nerd-font
 brew install ripgrep
+# mac specific things
+brew tap homebrew/cask-fonts
+brew install font-meslo-lg-nerd-font
 brew install --cask shottr
 brew install --cask firefox
 brew install --cask keka
@@ -48,6 +54,7 @@ brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask jetbrains-toolbox
+# terminal setup
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
 ~/.fzf/install
@@ -68,4 +75,5 @@ curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/code-editors/Jetb
 nvm install 20
 tmux source-file ~/.tmux.conf
 source ~/.zshrc
+# spotify blockthespot
 bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)
