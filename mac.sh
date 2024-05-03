@@ -6,15 +6,18 @@ sudo nvram "enable-ambient-light-sensor=0"
 defaults write -g NSWindowShouldDragOnGesture YES
 defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write -g InitialKeyRepeat -int 10
-defaults write -g KeyRepeat -int 1
+defaults write -g KeyRepeat -int 0
 defaults write -g AppleShowScrollBars -string "Always"
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.BezelServices dAuto -boolean false
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
 defaults write com.apple.finder autohide-delay -float 0;killall Finder
 defaults write com.apple.dock orientation bottom;defaults write com.apple.dock autohide -bool true;defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
