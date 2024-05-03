@@ -26,6 +26,7 @@ brew install fzf
 brew install tmux
 brew install git
 brew install tldr
+brew install font-meslo-lg-nerd-font
 brew install ripgrep
 brew install --cask shottr
 brew install --cask firefox
