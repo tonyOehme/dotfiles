@@ -108,6 +108,8 @@ fi
  alias gap="git commit -am \"du stinkst\";git push"
  alias updateconfig="curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf;tmux source-file ~/.tmux.conf;curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc;source ~/.zshrc;"
 
+ set -o vi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
