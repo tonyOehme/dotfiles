@@ -10,7 +10,7 @@ config files for vscode and zsh
 snap: https://apps.apple.com/us/app/snap/id418073146?mt=12
 ### mac setup comands
 
-one line setup:
+one line setup for mac:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tonyOehme/dotfiles/main/mac.sh)"
