@@ -1,5 +1,5 @@
 # dotfiles
-config files for vscode and zsh
+config files
 
 ## windows
 ### no terminal apps :(
