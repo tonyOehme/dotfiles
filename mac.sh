@@ -1,14 +1,14 @@
 # brew setup
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') > ~/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # mac settings
 sudo nvram "enable-ambient-light-sensor=0"
 defaults write -g NSWindowShouldDragOnGesture YES
 defaults write -g AppleReduceDesktopTinting -bool yes
 defaults write -g InitialKeyRepeat -int 10
-defaults write -g KeyRepeat -int 0
+defaults write -g KeyRepeat -int 1
 defaults write -g AppleShowScrollBars -string "Always"
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 defaults write com.apple.universalaccess mouseDriverCursorSize 4.0
@@ -44,7 +44,6 @@ brew install --cask docker
 brew install --cask topnotch
 brew install --cask google-chrome
 brew install --cask maccy
-brew install --cask iterm2
 brew install --cask alacritty
 brew install --cask alfred
 brew install --cask scroll-reverser
