@@ -105,7 +105,7 @@ fi
 # Example aliases
  alias n="nvim ."
  alias a="tmux attach"
- alias gap="git commit -am \"auto push for university stuff\";git push"
+ alias gap="git commit -am \"automated push for university stuff\";git push"
  alias gmp="git commit -a;git push"
  alias updateconfig="curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf;tmux source-file ~/.tmux.conf;curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc;source ~/.zshrc;"
 
