@@ -103,13 +103,13 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
- alias n="nvim ."
- alias a="tmux attach"
- alias gap="git commit -am \"automated push for university stuff\";git push"
- alias gmp="git commit -a;git push"
- alias updateconfig="curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf;tmux source-file ~/.tmux.conf;curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc;source ~/.zshrc;"
+alias n="nvim ."
+alias a="tmux attach"
+alias gap="git commit -am \"automated push for university stuff\";git push"
+alias gmp="git commit -a;git push"
+alias updateconfig="curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf;tmux source-file ~/.tmux.conf;curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc;source ~/.zshrc;"
 
- set -o vi
+set -o vi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
