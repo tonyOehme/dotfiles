@@ -28,7 +28,7 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # terminal programs
-brew install nvim
+brew install neovim
 brew install fzf
 brew install tmux
 brew install git
