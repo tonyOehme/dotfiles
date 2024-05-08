@@ -29,11 +29,26 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # terminal programs
 brew install neovim
+git clone https://github.com/tonyOehme/nvim.git ~/.config/nvim
+
 brew install fzf
+eval "$(fzf --zsh)"
+
 brew install tmux
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf
+
 brew install git
 brew install tldr
 brew install ripgrep
+
+brew install powerlevel10k
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+
+brew install zsh-syntax highlighting
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+
+brew install zsh-autosuggestions
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 # mac specific things
 brew tap homebrew/cask-fonts
 brew install font-meslo-lg-nerd-font
@@ -55,20 +70,12 @@ brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask jetbrains-toolbox
 # terminal setup
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth 1 https://github.com/junegunn/fzf.git  ~/.fzf
-~/.fzf/install
+git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
 git config --global init.defaultBranch main
 git config --global core.editor "nvim"
 git config --global pull.rebase false
-echo .DS_Store >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-git clone https://github.com/tonyOehme/nvim.git ~/.config/nvim
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+echo .DS_Store >> ~/.gitignore_global
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/code-editors/Jetbrains/.ideavimrc > ~/.ideavimrc
