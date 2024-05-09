@@ -44,7 +44,7 @@ brew install ripgrep
 brew install powerlevel10k
 echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 
-brew install zsh-syntax highlighting
+brew install zsh-syntax-highlighting
 echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
 brew install zsh-autosuggestions
