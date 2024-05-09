@@ -32,7 +32,7 @@ brew install neovim
 git clone https://github.com/tonyOehme/nvim.git ~/.config/nvim
 
 brew install fzf
-eval "$(fzf --zsh)"
+echo 'eval "$(fzf --zsh)"' >>~/.zshrc  
 
 brew install tmux
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.tmux.conf > ~/.tmux.conf
