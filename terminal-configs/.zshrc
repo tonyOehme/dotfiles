@@ -104,6 +104,7 @@ fi
 #
 # Example aliases
 alias n="nvim ."
+alias ls="ls -G -F"
 alias a="tmux attach"
 alias gap="git commit -am \"automated push for university stuff\";git push"
 alias gmp="git commit -a;git push"
@@ -114,5 +115,4 @@ set -o vi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
