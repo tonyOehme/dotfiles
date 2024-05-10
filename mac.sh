@@ -1,3 +1,28 @@
+# terminal setup
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+mkdir personal
+mkdir studium
+mkdir work
+git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
+git config --global user.name "Tony Andy Oehme"
+git config --global user.email "go98mub@mytum.de"
+git config --global init.defaultBranch main
+git config --global core.editor "nvim"
+git config --global pull.rebase false
+git config --global core.excludesfile ~/.gitignore_global
+echo .DS_Store >> ~/.gitignore_global
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zprofile > ~/.zprofile
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/code-editors/Jetbrains/.ideavimrc > ~/.ideavimrc
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20
+curl https://sh.rustup.rs -sSf | sh
+tmux source-file ~/.tmux.conf
+ssh-keygen -t ed25519 -C "go98mub@mytum.de"
+source ~/.zshrc
 # brew setup
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -61,29 +86,5 @@ brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask rectangle
 brew install --cask jetbrains-toolbox
-# terminal setup
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-mkdir personal
-mkdir studium
-mkdir work
-git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
-git config --global user.name "Tony Andy Oehme"
-git config --global user.email "go98mub@mytum.de"
-git config --global init.defaultBranch main
-git config --global core.editor "nvim"
-git config --global pull.rebase false
-git config --global core.excludesfile ~/.gitignore_global
-echo .DS_Store >> ~/.gitignore_global
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zprofile > ~/.zprofile
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/code-editors/Jetbrains/.ideavimrc > ~/.ideavimrc
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install 20
-curl https://sh.rustup.rs -sSf | sh
-tmux source-file ~/.tmux.conf
-source ~/.zshrc
 # spotify blockthespot
 bash <(curl -sSL https://raw.githubusercontent.com/Nuzair46/BlockTheSpot-Mac/main/install.sh)
