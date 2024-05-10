@@ -70,6 +70,8 @@ mkdir personal
 mkdir studium
 mkdir work
 git clone https://github.com/tonyOehme/scripts.git ~/personal/scripts
+git config --global user.name "Tony Andy Oehme"
+git config --global user.email "go98mub@mytum.de"
 git config --global init.defaultBranch main
 git config --global core.editor "nvim"
 git config --global pull.rebase false
@@ -80,6 +82,7 @@ curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/code-editors/Jetbrains/.ideavimrc > ~/.ideavimrc
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
+curl https://sh.rustup.rs -sSf | sh
 tmux source-file ~/.tmux.conf
 source ~/.zshrc
 # spotify blockthespot
