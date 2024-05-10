@@ -22,7 +22,6 @@ nvm install 20
 curl https://sh.rustup.rs -sSf | sh
 tmux source-file ~/.tmux.conf
 ssh-keygen -t ed25519 -C "go98mub@mytum.de"
-source ~/.zshrc
 # brew setup
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
