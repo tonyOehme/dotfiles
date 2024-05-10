@@ -103,8 +103,9 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+eval "$(fzf --zsh)"
 alias n="nvim ."
-alias ls="ls -G -F"
+alias ls="ls --color=auto -F"
 alias a="tmux attach"
 alias gap="git commit -am \"automated push for university stuff\";git push"
 alias gmp="git commit -a;git push"
@@ -114,5 +115,4 @@ set -o vi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 

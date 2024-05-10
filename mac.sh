@@ -77,9 +77,9 @@ git config --global core.editor "nvim"
 git config --global pull.rebase false
 git config --global core.excludesfile ~/.gitignore_global
 echo .DS_Store >> ~/.gitignore_global
-curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zprofile > ~/.zprofile
 curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/code-editors/Jetbrains/.ideavimrc > ~/.ideavimrc
+curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/.zshrc > ~/.zshrc
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm install 20
 curl https://sh.rustup.rs -sSf | sh
