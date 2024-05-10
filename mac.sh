@@ -1,7 +1,7 @@
 # brew setup
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$('$(brew --prefix)'/bin/brew shellenv)"') >> ~/.zprofile
+(echo; echo 'eval "$('$(brew --prefix)'/bin/brew shellenv)"') >> ~/.zshrc
 eval "$("$(brew --prefix)"/bin/brew shellenv)"
 # mac settings
 sudo nvram "enable-ambient-light-sensor=0"
