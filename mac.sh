@@ -64,6 +64,7 @@ curl https://raw.githubusercontent.com/tonyOehme/dotfiles/main/terminal-configs/
 brew install git
 brew install tldr
 brew install ripgrep
+brew install yazi
 
 # mac specific things
 brew tap homebrew/cask-fonts
