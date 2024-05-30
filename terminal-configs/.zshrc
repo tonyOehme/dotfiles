@@ -106,6 +106,7 @@ fi
 eval "$(fzf --zsh)"
 alias n="nvim ."
 alias ls="ls --color=auto -F"
+alias y="yazi ."
 alias a="tmux attach"
 alias gap="git commit -am \"automated push for university stuff\";git push"
 alias gmp="git commit -a;git push"
