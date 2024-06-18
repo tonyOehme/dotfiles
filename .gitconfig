@@ -1,0 +1,23 @@
+[user]
+	name = Tony Andy Oehme
+	email = go98mub@mytum.de
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+    pager = cat
+	excludesfile = ~/.gitignore_global
+    whitespace = -trailing-space
+[pull]
+	rebase = false
+[diff]
+    renames = true
+    submodule = log
+    mnemonicPrefix = true
+[color]
+	ui = auto
+
+[status]
+    submoduleSummary = true
+    showUntrackedFiles = all
+
